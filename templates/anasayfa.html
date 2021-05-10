@@ -1,0 +1,35 @@
+{% extends "base_page.html" %}
+{% block body %}
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 ">
+      
+      <img src="{{ url_for('static', filename='guardian.png') }}" alt="" width="350" height="350" class="d-inline-block align-text-center">
+
+    </div>
+ 
+ 
+    <div class="col-md-6 ">
+      
+      <h1>Giriş</h1>
+
+      
+      {% from "_formhelpers.html" import render_field %}
+      <form method=post>
+        <dl>
+          {{ render_field(form.username) }}
+          {{ render_field(form.password) }}
+        </dl>
+        <button type="submit" class="btn btn-success">Giriş</button>
+      </form>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}

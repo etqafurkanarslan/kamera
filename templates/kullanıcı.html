@@ -1,0 +1,31 @@
+{% extends "base_page.html" %}
+{% block body %}
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 ">
+        <center>
+          <img src="{{url_for}}" alt="">
+        </center>
+      </div>
+   
+   
+      <div class="col-md-6 ">
+        <center>
+        <div class="btn-group-vertical" role="group" aria-label="Basic example">
+
+          <a href='/ileri' class="btn btn-primary">İLERİ</a>
+          <div class="btn-group" role="group" aria-label="Basic example">
+
+            <a href='/sol' class="btn btn-primary">SOL</a>
+            <a href='/dur' class="btn btn-danger">DUR</a>
+            <a href='/sağ' class="btn btn-primary">SAĞ</a>
+            
+          </div>
+         </div>
+        </center>
+     </div>
+        
+    </div>
+  </div>
+</div>
+{% endblock %}
